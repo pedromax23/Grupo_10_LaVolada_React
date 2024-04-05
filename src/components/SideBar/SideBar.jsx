@@ -1,13 +1,14 @@
 import React from 'react';
 import image from '../../assets/images/la_volada_logo.png';
 import ContentWrapper from '../ContentWrapper/ContentWrapper';
-import GenresInDb from '../GenresInDb/GenresInDb';
+import Variedades from '../Variedades/Variedades';
 import LastMovieInDb from '../LastMovieInDb/LastMovieInDb';
 import ContentRowMovies from '../ContentRowMovies/ContentRowMovies';
+import DetalleProduct from '../DetalleProduct/DetalleProduct';
 import './SideBar.css'
 
 import NotFound from '../NotFound';
-import SearchMovies from '../SearchMovies/SearchMovies'
+import BuscarProducto from '../BuscarProducto/BuscarProducto'
 
 import {Link, Route, Routes} from 'react-router-dom';
 
@@ -36,7 +37,7 @@ function SideBar(){
                 <div className="sidebar-heading">Actions</div>
 
                 <li className="nav-item">
-                    <Link className="nav-link" to="/GenresInDb">
+                    <Link className="nav-link" to="/Variedades">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Variedades</span>
                     </Link>
@@ -60,9 +61,9 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Search -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="/SearchMovies">
+                    <Link className="nav-link" to="/BuscarProducto">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Search Mocies</span>
+                        <span>Buscar Productos</span>
                     </Link>
                 </li>
                 <hr className="sidebar-divider d-none d-md-block"/>
@@ -71,13 +72,15 @@ function SideBar(){
             <Routes>
                 <Route path="/" element={<ContentWrapper />} />
 
-                <Route path="/GenresInDb" element={<GenresInDb />} />
+                <Route path="/Variedades" element={<Variedades />} />
 
                 <Route path="/LastMovieInDb" element={<LastMovieInDb />} />
 
                 <Route path="/ContentRowMovies" element={<ContentRowMovies />} />
 
-                <Route path="/SearchMovies" element={<SearchMovies />} />
+                <Route path="/BuscarProducto" element={<BuscarProducto />} />
+
+                <Route path="/detalle/:id" element={<DetalleProduct />} />
 
                 <Route path='*' element={<NotFound />} />
             </Routes>

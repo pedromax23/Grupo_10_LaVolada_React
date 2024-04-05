@@ -1,6 +1,6 @@
 import React from 'react';
 import LastMovieInDb from '../LastMovieInDb/LastMovieInDb';
-import GenresInDb from '../GenresInDb/GenresInDb';
+import Variedades from '../Variedades/Variedades';
 import './ContentRowCenter.css'
 
 function ContentRowCenter(){
@@ -12,7 +12,7 @@ function ContentRowCenter(){
             {/*<!-- End content row last movie in Data Base -->*/}
 
             {/*<!-- Genres in DB -->*/}
-            <GenresInDb />
+            <Variedades />
 
         </div>
     )
