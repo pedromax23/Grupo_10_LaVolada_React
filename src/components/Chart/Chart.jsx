@@ -1,5 +1,6 @@
 import React from 'react';
-import ChartRow from './ChartRow';
+import ChartRow from '../ChartRow/ChartRow';
+import './Chart.css'
 
 let tableRowsData = [
     {

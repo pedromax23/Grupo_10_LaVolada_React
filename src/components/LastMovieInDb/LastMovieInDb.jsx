@@ -1,5 +1,6 @@
 import React from 'react';
-import imagenFondo from '../assets/images/mandalorian.jpg';
+import imagenFondo from '../../assets/images/mandalorian.jpg';
+import './LastMovieInDb.css'
 
 function LastMovieInDb(){
     return(

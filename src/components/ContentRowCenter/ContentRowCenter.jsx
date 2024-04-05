@@ -1,6 +1,7 @@
 import React from 'react';
-import LastMovieInDb from './LastMovieInDb';
-import GenresInDb from './GenresInDb';
+import LastMovieInDb from '../LastMovieInDb/LastMovieInDb';
+import GenresInDb from '../GenresInDb/GenresInDb';
+import './ContentRowCenter.css'
 
 function ContentRowCenter(){
     return (
