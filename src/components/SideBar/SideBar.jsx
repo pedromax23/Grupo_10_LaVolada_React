@@ -3,6 +3,7 @@ import image from '../../assets/images/la_volada_logo.png';
 import ContentWrapper from '../ContentWrapper/ContentWrapper';
 import Variedades from '../Variedades/Variedades';
 import LastMovieInDb from '../LastMovieInDb/LastMovieInDb';
+import UltimoUsuario from '../UltimoUsuario/UltimoUsuario';
 import ContentRowMovies from '../ContentRowMovies/ContentRowMovies';
 import DetalleProduct from '../DetalleProduct/DetalleProduct';
 import './SideBar.css'
@@ -43,11 +44,19 @@ function SideBar(){
                     </Link>
                 </li>
 
-                {/*<!-- Nav Item - Charts -->*/}
+                {/*<!-- Ultimo producto -->*/}
                 <li className="nav-item">
                     <Link className="nav-link" to="/LastMovieInDb">
                         <i className="fas fa-fw fa-chart-area"></i>
                         <span>Ultimo producto</span>
+                    </Link>
+                </li>
+
+                {/*<!-- Ultimo usuario -->*/}
+                <li className="nav-item">
+                    <Link className="nav-link" to="/UltimoUsuario">
+                        <i className="fas fa-fw fa-chart-area"></i>
+                        <span>Ultimo usuario</span>
                     </Link>
                 </li>
 
@@ -75,6 +84,8 @@ function SideBar(){
                 <Route path="/Variedades" element={<Variedades />} />
 
                 <Route path="/LastMovieInDb" element={<LastMovieInDb />} />
+
+                <Route path="/UltimoUsuario" element={<UltimoUsuario />} />
 
                 <Route path="/ContentRowMovies" element={<ContentRowMovies />} />
 
