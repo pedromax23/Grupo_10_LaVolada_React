@@ -6,6 +6,7 @@ function ContentRowMovies(){
 
     const [users, setUsers] = useState({})
     const [products, setProducts] = useState({})
+    const [variedades, setVariedades] = useState({})
 
     useEffect(() => {
         fetch('http://localhost:3030/api/products')
@@ -26,6 +27,15 @@ function ContentRowMovies(){
                 color: 'success'
             })
         })
+        fetch('http://localhost:3030/api/products/variedades')
+        .then(res => res.json())
+        .then(data => {
+            setVariedades({
+                title: 'Variedades',
+                cuantity: data.count,
+                color: 'success'
+            })
+        })
     }, [])
 
 
@@ -36,6 +46,7 @@ function ContentRowMovies(){
             
             <SmallCard data={users}/>
             <SmallCard data={products}/>
+            <SmallCard data={variedades}/>
 
         </div>
     )
