@@ -1,0 +1,17 @@
+.boton__detalle {
+    margin: auto;
+    display: block;
+    color: brown;
+    width: 100px;
+    padding: 5px;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.boton__detalle:hover {
+    color: brown;
+    text-decoration: none;
+    background-color: brown;
+}
