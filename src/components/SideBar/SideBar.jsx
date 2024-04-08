@@ -18,11 +18,11 @@ function SideBar(){
         <React.Fragment>
             <ul className="menu_lateral navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-                <a className='link_imagen' href="/">
+                <Link className='link_imagen' to="/">
                     <div className="div_imagen sidebar-brand-icon">
                         <img className="w-100" src={image} alt="Digital House"/>
                     </div>
-                </a>
+                </Link>
 
                 <hr className="sidebar-divider my-0"/>
 
